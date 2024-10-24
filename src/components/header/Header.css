@@ -1,0 +1,99 @@
+nav {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    background-color: var(--main-medio);
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 1px 1px 0.5px 0.5px rgba(0, 0, 0, 0.3);
+    ;
+}
+
+.nav-title {
+    color: aliceblue;
+}
+
+.header-img {
+    height: 50px;
+    margin-left: 30px;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .header-img {
+        animation: header-img-spin infinite 20s linear;
+    }
+}
+
+
+@keyframes header-img-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.header-loggedin {
+    margin-left: auto;
+}
+
+.header-btn {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    font-size: 0.875rem;
+    border: none;
+    background-color: transparent;
+    color: var(--main-white);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+}
+
+.a-container {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.header-btn,
+nav a {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.875rem;
+    color: var(--main-white);
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+.header-btn:hover,
+nav a:hover {
+    color: var(--main-white);
+    text-decoration: none;
+
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        height: 2.5rem;
+
+        gap: 4px;
+    }
+
+    nav button,
+    nav a {
+        font-size: 0.75rem;
+
+    }
+}

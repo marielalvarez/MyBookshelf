@@ -1,0 +1,95 @@
+.bookshelf {
+    margin-top: 4rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)
+}
+
+.bs-title {
+    text-align: center;
+
+}
+
+.rl-img {
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+
+}
+
+.img-container {
+    align-items: center;
+    justify-self: center;
+}
+
+.books-container {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.book-item {
+    padding: 10px;
+    text-align: center;
+    color: var(--main-oscuro);
+    width: 20%;
+
+}
+
+.book-item:hover {
+    cursor: pointer;
+}
+
+/*reviews in modal*/
+.review-item {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin: 7px;
+
+}
+
+.reviews-section h2 {
+    color: cadetblue;
+}
+
+.bookRL-container,
+.rev-container {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+textarea {
+    margin: 12px;
+    width: 65%;
+    background-color: aliceblue;
+    border-color: var(--main-oscuro);
+
+}
+
+textarea::placeholder {
+    border-color: var(--main-medio);
+    color: var(--main-medio);
+}
+
+.rev-btn {
+    width: 20%;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: var(--main-oscuro);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rev-btn:hover {
+    background-color: var(--main-white);
+    color: var(--main-oscuro);
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+}
