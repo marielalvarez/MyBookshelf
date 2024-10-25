@@ -15,13 +15,12 @@ This personal project is a web application that allows users to explore books (G
 ## Set up
 1. Clone the repository:
 
-```
+```bash
 git clone https://github.com/marielalvarez/MyBookshelf
-
 ```
 
 2. Install dependencies: 
-```
+```bash
 npm install
 ```
 3. Create a .env file in the root directory with your API keys:
@@ -44,7 +43,6 @@ REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
 
 5. Start the development server:
 
-```
+```bash
 npm start
-
 ```
