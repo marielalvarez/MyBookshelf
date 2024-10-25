@@ -27,7 +27,7 @@ const Register = () => {
         <>
             {userLoggedIn && <Navigate to="/home" replace={true} />}
 
-            <main className="main-container">
+            <main className="main-container-r">
                 <div className="register-card">
                     <h1 class="register-h1">Create a New Account</h1>
                     <img className='reg-img' src={azureB1} alt="bookshelf" />

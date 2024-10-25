@@ -79,7 +79,6 @@ const ModalRL = ({ show, item, onClose }) => {
                                         <div key={index} className="review-item">
                                             <p>
                                                 {
-                                                    // Verifica si createdAt es un objeto Timestamp de Firebase
                                                     rev.createdAt && rev.createdAt.seconds
                                                         ? new Date(rev.createdAt.seconds * 1000).toLocaleString()
                                                         : rev.createdAt instanceof Date

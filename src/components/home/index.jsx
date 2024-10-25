@@ -44,8 +44,8 @@ const Home = () => {
             }
 
             const bookData = await bookResponse.json();
-            // Cambiamos aquí para obtener los libros de bookData.items
-            setBookData(bookData.items || []);  // Guardar los resultados de libros
+
+            setBookData(bookData.items || []);
 
         } catch (err) {
             setMovieData([]);
@@ -74,10 +74,9 @@ const Home = () => {
                     </form>
                     <img className='home-img' src={bookshelfImage1} alt="bookshelf" />
                 </div>
-                {loading && <p>Loading...</p>} {/* Indicador de carga */}
-                {error && <p className="error">{error}</p>} {/* Mostrar error si existe */}
+                {loading && <p>Loading...</p>}
+                {error && <p className="error">{error}</p>}
 
-                {/* Comprobar si hay datos en movieData y si el primer elemento está definido */}
                 {movieData.length > 0 && movieData[0] && (
                     <div className="column movie-details">
                         <h2>{movieData[0].title}</h2>
@@ -101,7 +100,6 @@ const Home = () => {
                 )}
             </div>
             <div className='card-container'>
-                {/* Mostrar libros relacionados */}
                 {bookData.length > 0 && (
                     <div className='column-container'>
                         <Card book={bookData} />

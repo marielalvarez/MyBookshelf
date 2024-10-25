@@ -33,7 +33,6 @@ const Login = () => {
             {userLoggedIn && <Navigate className='a' to="/home" replace={true} />}
 
             <main className="main-container">
-                <img className='login-img' src={bookshelfImage} alt="bookshelf" />
                 <div className="login-card">
                     <div className="text-center">
                         <h1 className='login-h1'>Welcome Back</h1>
@@ -91,6 +90,7 @@ const Login = () => {
                         {isSigningIn ? 'Signing In...' : 'Continue with Google'}
                     </button>
                 </div>
+                <img className='login-img' src={bookshelfImage} alt="bookshelf" />
             </main>
         </div>
     );

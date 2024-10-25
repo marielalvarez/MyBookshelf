@@ -5,10 +5,10 @@
 }
 
 :root {
-  --main-white: aliceblue;
+  --main-white: #f0f8ff;
   --main-red: #8B0000;
-  --main-medio: cadetblue;
-  --main-oscuro: darkcyan;
+  --main-medio: #5f9ea0;
+  --main-oscuro: #008b8b;
 }
 
 #root {
@@ -54,6 +54,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+
 }
 
 .column {
@@ -71,7 +73,6 @@ body {
   padding-top: 12%;
 }
 
-/* Header */
 .h1 {
   color: var(--main-oscuro);
   font-size: 3em;
@@ -84,7 +85,6 @@ h1 {
   font-size: 3em;
 }
 
-/* Form Styling */
 .home-form {
   padding-top: 10%;
   margin-bottom: 15px;
@@ -112,7 +112,7 @@ h1 {
 
 .button,
 .inner-box button {
-  width: 20%;
+  width: 100px;
   padding: 10px 20px;
   border-radius: 2px;
   background-color: var(--main-oscuro);
@@ -129,7 +129,6 @@ h1 {
 }
 
 
-/* Movie Details */
 .movie-details {
   text-align: center;
 
@@ -164,7 +163,6 @@ h1 {
 
 }
 
-/* Error Message */
 .error {
   margin-top: 10px;
   color: black;
@@ -172,8 +170,7 @@ h1 {
 
 
 
-/* Responsive Design */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .App {
     flex-direction: column;
     align-items: center;
@@ -182,6 +179,14 @@ h1 {
   .column {
     width: 100%;
     margin: 10px 0;
+  }
+
+
+  .column-container,
+  .books-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .search-bar,
@@ -201,7 +206,7 @@ h1 {
 
 
 .card {
-  width: 40%;
+  width: 300px;
   border-radius: 2px;
   padding: 0.5rem;
   margin-bottom: 10px;
@@ -242,7 +247,7 @@ h1 {
 
 }
 
-/*Overlay Modals*/
+
 .overlay {
   min-height: 90vh;
   width: 100%;
@@ -280,6 +285,8 @@ h1 {
   background-color: darkred;
   width: 20px;
   height: 20px;
+  color: white;
+  font-size: 15px;
   border-radius: 100%;
 }
 

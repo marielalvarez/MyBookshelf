@@ -32,14 +32,14 @@ const Modal = ({ show, item, onClose }) => {
         <>
             <div className="overlay">
                 <div className="overlay-inner">
-                    <button className="close" onClick={onClose}><i className="fas fa-times"></i></button>
+                    <button className="close" onClick={onClose}>x</button>
                     <div className="inner-box">
                         <img src={thumbnail} alt="" />
                         <div className="info">
                             <h1>{item.volumeInfo.title}</h1>
                             <p>Author: {item.volumeInfo.authors ? item.volumeInfo.authors.join(', ') : "No authors available"}</p>
                             <p>Publisher: {item.volumeInfo.publisher}<span>{item.volumeInfo.publishedDate}</span></p><br />
-                            <a href={item.volumeInfo.previewLink}><button>More</button></a>
+                            <a href={item.volumeInfo.previewLink}><button className='addfav'>More</button></a>
                             <button className='addfav' onClick={saveDataToFirestore}>BookShelf</button>
                         </div>
                     </div>

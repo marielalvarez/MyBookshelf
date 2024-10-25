@@ -4,7 +4,9 @@ import { getFirestore, collection, query, where, getDocs } from 'firebase/firest
 import { useAuth } from '../../auth_context';
 import './readlist.css';
 import ModalRL from '../books/ModalRL';
-import b2 from '../../images/bookshelf2.png';
+import estante from '../../images/estante.png';
+import bookshelfImage from '../../images/bookshelf2.png';
+
 
 const Readlist = () => {
     const { currentUser } = useAuth();
@@ -48,7 +50,7 @@ const Readlist = () => {
     if (readList.length === 0) {
         return <div className='bookshelf'>
             <h1 className='bs-title'>No items in your read list.</h1>
-            <div className='img-container'><img className='rl-img' src={b2} alt="bookshelf" /></div>
+            <div className='img-container'><img className='rl-img' src={bookshelfImage} alt="bookshelf" /></div>
 
 
 
@@ -57,7 +59,12 @@ const Readlist = () => {
 
     return (
         <div className='bookshelf'>
-            <h1 className='bs-title'>Bookshelf</h1>
+            <div className='img-title'>
+
+                <h1 className='bs-title'>Bookshelf</h1>
+
+                <img className='estante' src={estante} alt="bookshelf" />
+            </div>
             <div className="books-container">
                 {readList.map((item, index) => (
                     <div key={index} className="book-item" onClick={() => { setShow(true); setItem(item) }}>
